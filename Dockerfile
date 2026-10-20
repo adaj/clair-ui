@@ -2,7 +2,7 @@ FROM python:3.11-slim
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
-    PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
     GRADIO_ANALYTICS_ENABLED=False \
     MPLBACKEND=Agg \
     MPLCONFIGDIR=/tmp/mplconfig
@@ -12,7 +12,8 @@ RUN useradd --create-home --uid 10001 app \
 WORKDIR /app
 
 COPY requirements.txt .
-RUN pip install -r requirements.txt
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install --default-timeout=120 --retries 10 -r requirements.txt
 
 COPY clair_client.py app.py ui_style.py modes_guide.py i18n.py plots_mpl.py analytics_adapter.py sim_bridge.py modes_help*.json ./
 COPY assets/ ./assets/
