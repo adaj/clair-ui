@@ -1,0 +1,44 @@
+services:
+  clair:
+    container_name: clair
+    image: ghcr.io/adaj/clair:v0.4.6
+    platform: linux/amd64
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongo-db
+    restart: always
+    environment:
+      - MONGO_URI=mongodb://mongo-db:27017/
+    networks:
+      - clair-network
+
+  clair-ui:
+    build: .
+    ports:
+      - "127.0.0.1:7860:7860"
+    environment:
+      - CLAIR_URL=http://clair:8000
+      - CLAIR_TOKEN=${CLAIR_TOKEN:-}
+      - COLLABSIM_ANTHROPIC_API_KEY=${COLLABSIM_ANTHROPIC_API_KEY:-}
+    depends_on:
+      - clair
+    restart: unless-stopped
+    networks:
+      - clair-network
+
+  mongo-db:
+    container_name: mongo-db
+    image: mongo:5.0
+    restart: always
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - clair-network
+
+volumes:
+  mongo-data:
+
+networks:
+  clair-network:
+    driver: bridge

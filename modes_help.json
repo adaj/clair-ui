@@ -1,0 +1,254 @@
+{
+  "_status": "rascunho para revisão do autor",
+  "_fonte": "Lido de ~/Documents/clair/triggering/modes (config.yml, rules.yml, talk_moves.yml, followups.yml, what_ifs e small_talk.yml). Os README dos quatro modos dizem 'Documentation under construction'. Trechos marcados [a confirmar] são interpretação e precisam de revisão.",
+  "geral": {
+    "titulo": "Em todos os modos",
+    "texto": "A Clair responde diretamente a conversa com ela (small talk): cumprimenta o grupo (a saudação 'Hi everyone, my name is Clair…'; o autor informa que ela também cumprimenta quando duas pessoas entram no chat [a confirmar como o servidor decide isso]), confirma que ainda está ali, diz como está e quem é. Quando pedem ajuda, sugere perguntar ao parceiro, e quando fazem uma pergunta de conteúdo, diz que não sabe o bastante para responder. O papel dela é facilitar a discussão entre as pessoas, não ser fonte de respostas. Essas respostas existem em todos os modos lidos (em cada idioma do modo). O que muda de um modo para outro é o conjunto de jogadas (talk moves), os sinais da conversa que decidem quando intervir e os idiomas disponíveis."
+  },
+  "modos": [
+    {
+      "id": "apt-base",
+      "rotulo": "apt-base (padrão)",
+      "em_uma_frase": "O repertório de referência de Academically Productive Talk: oito jogadas para aprofundar o raciocínio e fazer os participantes se ouvirem.",
+      "o_nome": "APT é Academically Productive Talk, o referencial de talk moves em que a Clair se apoia. 'Base' marca o conjunto central de jogadas dessa tradição, sem metas pedagógicas explícitas e sem conteúdo de um tema específico. Por isso é o padrão: funciona com qualquer assunto e serve de linha de base para comparar os outros modos.",
+      "o_conjunto": "As oito jogadas cumprem três funções. Aprofundar o que alguém disse (ampliar o raciocínio, pedir um exemplo). Fazer os colegas se ouvirem (concordar ou discordar, reformular com as próprias palavras, acrescentar, ligar a própria ideia à do outro, construir sobre o que já foi dito). E organizar o que o grupo já construiu (recapitular). Várias jogadas se dirigem a uma pessoa pelo nome e falam do 'parceiro': devolvem a palavra aos participantes em vez de responder por eles, o que combina com uma Clair que não ensina conteúdo.",
+      "como_age": "Cada jogada tem uma regra que combina sinais do estado do diálogo (dominância e coordenação, tipo de fala como iniciar ou argumentar, similaridade com o tema, tempo e ritmo). Só age quando a certeza passa de 0,75. Por exemplo, a recapitulação é ligada a baixa similaridade com o tema e tempo alto, e o 'concordar ou discordar' a argumentação com alta coordenação. [a confirmar]",
+      "jogadas": [
+        {
+          "nome": "Ampliar o raciocínio",
+          "exemplo": "<speaker>, could you please elaborate more on this?"
+        },
+        {
+          "nome": "Exemplificar",
+          "exemplo": "<speaker>, could you give an example?"
+        },
+        {
+          "nome": "Construir sobre o que já foi dito",
+          "exemplo": "<speaker>, how does this add to what <discussant> already said?"
+        },
+        {
+          "nome": "Concordar ou discordar",
+          "exemplo": "<discussant>, do you agree or disagree with your partner?"
+        },
+        {
+          "nome": "Vincular contribuições",
+          "exemplo": "<discussant>, considering what <speaker> just said, how does your idea fit in?"
+        },
+        {
+          "nome": "Reformular",
+          "exemplo": "<discussant>, could you put in other words what your partner just said?"
+        },
+        {
+          "nome": "Complementar",
+          "exemplo": "<discussant>, do you have anything to add to what your partner just said?"
+        },
+        {
+          "nome": "Recapitular",
+          "exemplo": "This conversation is interesting. Would any of you be able to give a brief summary of what you've covered so far?"
+        }
+      ],
+      "indicado_para": [
+        "Primeira demonstração da Clair.",
+        "Qualquer tema: não depende de material preparado para o conteúdo.",
+        "Linha de base para comparar com os outros modos.",
+        "Cinco idiomas: EN, PT, NL, ZH e DE."
+      ],
+      "cuidados": [
+        "Não há jogada ligada ao silêncio: quem fica calado passa despercebido (compare com o apt-goals). [a confirmar]",
+        "As frases falam do 'parceiro', ou seja, foram escritas para duplas.",
+        "Sem metas pedagógicas explícitas: a Clair reage a padrões da conversa, não a um plano de aula."
+      ],
+      "idiomas": [
+        "EN",
+        "PT",
+        "NL",
+        "ZH",
+        "DE"
+      ],
+      "sinais": 12
+    },
+    {
+      "id": "apt-goals",
+      "rotulo": "apt-goals",
+      "em_uma_frase": "APT organizada por metas pedagógicas: a Clair pode puxar a conversa sozinha, convidar quem está calado, reorientar para a aula e propor perguntas hipotéticas.",
+      "o_nome": "'Goals' indica que as jogadas deixam de ser um repertório plano e passam a servir a metas numeradas: o check-in é a meta 1; reorientar, coordenar colegas e fazê-los perguntar entre si são a meta 2; o what-if é a meta 3; pressionar o raciocínio é a meta 4. A numeração sugere uma progressão, de manter as pessoas participando e na tarefa até exigir justificativa [a confirmar].",
+      "o_conjunto": "Seis jogadas, e isso muda o papel da Clair: em vez de só reagir ao que foi dito, ela também cuida de quem não está falando. O check-in convida o grupo a contar o progresso; a reorientação traz a discussão de volta à aula; a coordenação pede a um colega que ajude outro com o próximo passo; as perguntas entre pares incentivam a perguntar ao colega em vez de a ela; o what-if lança uma hipótese ('o que aconteceria se…'); e a pressão por raciocínio pede elaboração ou um exemplo. Três das jogadas têm perguntas de acompanhamento prontas (por exemplo, pedir que o autor explique por que pensa assim), então a Clair conduz pequenas sequências, não comentários isolados.",
+      "como_age": "Pelas regras, o check-in depende do sinal TSLM e do tempo, a reorientação do sinal COFF, a coordenação entre pares da coordenação entre colegas sem pergunta e do sinal L3_CU, e as perguntas entre pares do sinal TSLQ [a confirmar o significado de TSLM, COFF e TSLQ: leio como tempo desde a última mensagem, conversa fora do assunto e tempo desde a última pergunta]. Como ela pode falar sem mensagem disparadora, a interface precisa consultar o servidor de tempos em tempos (consulta proativa).",
+      "jogadas": [
+        {
+          "nome": "Check-in (meta 1)",
+          "exemplo": "It seems a bit quiet in this corner. Would you like to share your current progress and if there's anything you're unsure about the next steps?"
+        },
+        {
+          "nome": "Reorientar (meta 2)",
+          "exemplo": "I'm getting a bit lost here. Shall we redirect your discussion back to the lesson?"
+        },
+        {
+          "nome": "Coordenação entre pares (meta 2)",
+          "exemplo": "<discussant>, could you help <speaker>? Please share what you think might be a good next step."
+        },
+        {
+          "nome": "Perguntas entre pares (meta 2)",
+          "exemplo": "<discussant>, got any questions for <speaker> about something you are finding difficult to understand?"
+        },
+        {
+          "nome": "What-if (meta 3)",
+          "exemplo": "<speaker>, what do you think would happen if the particle didn't fit the enzyme's shape?"
+        },
+        {
+          "nome": "Pressionar o raciocínio (meta 4)",
+          "exemplo": "<discussant>, could you elaborate more on what <speaker> said or give one example to illustrate?"
+        }
+      ],
+      "indicado_para": [
+        "Mostrar a Clair puxando a conversa sozinha.",
+        "Atividades com metas claras: participação, foco na lição, justificativa.",
+        "Temas de Enzimas (digestão) e Genética, que têm perguntas what-if prontas. [a confirmar]",
+        "Seis idiomas: EN, NL, PT, ES, DE e ZH."
+      ],
+      "cuidados": [
+        "As perguntas what-if existem só para Enzimas e Genética; em outro tema a meta 3 não tem material pronto. [a confirmar]",
+        "Foi construído em torno de uma aula (as frases falam em 'lição') com conversas em holandês sobre Enzimas. [a confirmar]",
+        "Precisa da consulta proativa ligada para a Clair poder falar sozinha."
+      ],
+      "idiomas": [
+        "EN",
+        "NL",
+        "PT",
+        "ES",
+        "DE",
+        "ZH"
+      ],
+      "sinais": 15
+    },
+    {
+      "id": "self-determination",
+      "rotulo": "self-determination",
+      "em_uma_frase": "Apoio motivacional em vez de pressão por raciocínio: três jogadas que oferecem escolha, reforçam a competência e a conexão entre colegas.",
+      "o_nome": "É a Teoria da Autodeterminação, que aponta três necessidades psicológicas básicas: autonomia, competência e pertencimento (relatedness). As três jogadas do modo levam exatamente esses nomes, então o desenho traduz a teoria de forma direta: em vez de cobrar mais argumentação, a Clair tenta sustentar a motivação para continuar conversando.",
+      "o_conjunto": "Autonomia: convida a elaborar ou dar um exemplo, mas deixa explícito que a pessoa pode preferir seguir a conversa ('agradeço sua escolha'). Competência: liga a fala ao que já foi discutido e depois reforça que cada contribuição melhora a compreensão. Pertencimento: pergunta como as ideias combinam ou diferem das do colega e agradece por compartilhar. O repertório é mínimo: uma frase por jogada, mais duas mensagens de agradecimento por jogada. É um modo para observar o efeito do tom de apoio, não para ter variedade de intervenções.",
+      "como_age": "Decide com poucos sinais (tipo de fala, proximidade com o tema, ritmo) e fica quieto quando a mensagem é uma pergunta. [a confirmar]",
+      "jogadas": [
+        {
+          "nome": "Apoio à autonomia",
+          "exemplo": "<speaker>, could you elaborate on this or give an example to your partner? Or would you rather continue with the conversation? I appreciate your choice."
+        },
+        {
+          "nome": "Apoio à competência",
+          "exemplo": "<speaker>, how does this connect with what we have discussed so far?"
+        },
+        {
+          "nome": "Apoio ao pertencimento",
+          "exemplo": "<discussant>, how do your ideas match or differ from your partner's ideas? What else would you like to add?"
+        }
+      ],
+      "indicado_para": [
+        "Comparar um estilo de apoio motivacional com o estilo de pressão por raciocínio do APT.",
+        "Demonstrações em que se quer uma Clair mais gentil e menos exigente."
+      ],
+      "cuidados": [
+        "Só um idioma: EN. [a confirmar]",
+        "Uma única frase por jogada: em conversas longas fica repetitivo.",
+        "Usa menos sinais da conversa (9) que os outros modos (12 a 18)."
+      ],
+      "idiomas": [
+        "EN"
+      ],
+      "sinais": 9
+    },
+    {
+      "id": "ssrl",
+      "rotulo": "ssrl",
+      "em_uma_frase": "Regulação compartilhada da aprendizagem: intervenções dirigidas ao grupo todo, sobre compreensão, planejamento conjunto, participação e clima.",
+      "o_nome": "SSRL costuma designar Socially Shared Regulation of Learning, a regulação da aprendizagem que o grupo faz em conjunto [a confirmar]. As cinco jogadas dizem o mesmo: cognitiva, metacognitiva, comportamental, socioemocional e de perspectiva compartilhada. O foco muda da contribuição individual para o funcionamento do grupo.",
+      "o_conjunto": "As frases se dirigem a todos ('expliquem uns aos outros', 'como vocês poderiam ajudar uns aos outros'), sem chamar ninguém pelo nome, ao contrário do APT. Cada jogada traz 3 ou 4 variações, o repertório mais variado entre os modos. Cognitiva: cuida de confusão e de entendimento comum dos conceitos e dos recursos. Metacognitiva: pede que falem de como entendem a tarefa e como seguir juntos. Comportamental: chama atenção para quem pode não ter participado. Socioemocional: aparece quando o tom esquenta e pede uma conversa mais amigável. Perspectiva compartilhada: lembra que o objetivo é do grupo e pede um plano comum. Comportamental e perspectiva compartilhada só disparam uma vez, para não virar cobrança.",
+      "como_age": "É o modo com mais sinais (18), incluindo participação desigual entre os membros e sinais de emoção negativa [a confirmar o significado dos sinais]. Só dispara a jogada comportamental e a de perspectiva compartilhada uma vez [a confirmar se o limite é por sessão ou por grupo]. [a confirmar]",
+      "jogadas": [
+        {
+          "nome": "Cognitiva",
+          "exemplo": "There seems to be some confusion in the air. Explain to each other again what you are trying to understand at the moment."
+        },
+        {
+          "nome": "Metacognitiva",
+          "exemplo": "Excellent reflection! How could you help each other to move forward as a group?"
+        },
+        {
+          "nome": "Comportamental",
+          "exemplo": "Hmm - I wonder if everyone has had a chance to make their voice heard?"
+        },
+        {
+          "nome": "Socioemocional",
+          "exemplo": "Working together is sometimes challenging! How could you make sure that everyone is still on good terms?"
+        },
+        {
+          "nome": "Perspectiva compartilhada",
+          "exemplo": "I noticed that you may be thinking from your own perspective. What could be your common plan to solve the problem?"
+        }
+      ],
+      "indicado_para": [
+        "Trabalho em grupo de três ou mais pessoas (as frases falam em 'vocês' e 'o grupo', não em 'parceiro').",
+        "Tarefas em que importam a participação equilibrada e o clima do grupo.",
+        "Demonstrar uma Clair mais voltada ao processo do grupo do que ao conteúdo."
+      ],
+      "cuidados": [
+        "Só um idioma: EN. [a confirmar]",
+        "A pasta de dados do modo é Chats-FI-ForceEnergy-2023 (tarefa de força e energia); a calibração para outros contextos não está documentada aqui. [a confirmar]"
+      ],
+      "idiomas": [
+        "EN"
+      ],
+      "sinais": 18
+    }
+  ],
+  "comparativo": {
+    "colunas": [
+      "Modo",
+      "Jogadas",
+      "Dirige-se a",
+      "Tema específico",
+      "Idiomas",
+      "Sinais"
+    ],
+    "linhas": [
+      [
+        "apt-base (padrão)",
+        "8",
+        "Pessoas pelo nome, falando do 'parceiro'",
+        "Não",
+        "EN, PT, NL, ZH, DE",
+        "12"
+      ],
+      [
+        "apt-goals",
+        "6",
+        "Pessoas pelo nome e o grupo (check-in, reorientação)",
+        "Sim, para o what-if (Enzimas, Genética)",
+        "EN, NL, PT, ES, DE, ZH",
+        "15"
+      ],
+      [
+        "self-determination",
+        "3",
+        "Pessoas pelo nome",
+        "Não",
+        "EN",
+        "9"
+      ],
+      [
+        "ssrl",
+        "5",
+        "O grupo todo, sem nomes",
+        "Não",
+        "EN",
+        "18"
+      ]
+    ]
+  },
+  "legenda_placeholders": "Nas frases de exemplo, <speaker> é quem acabou de falar e <discussant> é outro participante do grupo [a confirmar].",
+  "incertezas": [
+    "Os quatro README dizem 'Documentation under construction'. Este guia vem de config.yml, rules.yml, talk_moves.yml, followups.yml e what_ifs.",
+    "Foi lido da cópia em ~/Documents/clair, que pode diferir da imagem implantada. A lista oficial de idiomas de cada modo é a que a API devolve em GET /languages/{modo}.",
+    "O significado de sinais como TSLM, TSLQ, COFF, TSIM e GINI foi inferido pelos nomes das regras e das frases.",
+    "As leituras dos nomes (metas 1 a 4 do apt-goals; SSRL) são interpretação e estão marcadas [a confirmar]."
+  ]
+}

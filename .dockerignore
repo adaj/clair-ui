@@ -1,0 +1,12 @@
+.env
+.env.*
+__pycache__/
+*.pyc
+.pytest_cache/
+test_*.py
+*_test.py
+smoke_app.py
+mock_clair.py
+requirements-dev.txt
+README.md
+ui_check.py

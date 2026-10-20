@@ -1,0 +1,254 @@
+{
+  "_status": "draft for author review",
+  "_fonte": "Read from ~/Documents/clair/triggering/modes (config.yml, rules.yml, talk_moves.yml, followups.yml, what_ifs and small_talk.yml). The READMEs of the four modes say 'Documentation under construction'. Passages marked [to be confirmed] are interpretation and need review.",
+  "geral": {
+    "titulo": "In all modes",
+    "texto": "Clair responds directly to conversation addressed to her (small talk): she greets the group (the greeting 'Hi everyone, my name is Clair…'; the author reports that she also greets when two people join the chat [to be confirmed: how the server decides this]), confirms she is still there, says how she is doing and who she is. When people ask for help, she suggests asking their partner, and when they ask a content question, she says she does not know enough to answer. Her role is to facilitate discussion among people, not to be a source of answers. These responses exist in all modes read (in each language of the mode). What changes from one mode to another is the set of moves (talk moves), the conversation signals that decide when to intervene, and the available languages."
+  },
+  "modos": [
+    {
+      "id": "apt-base",
+      "rotulo": "apt-base (default)",
+      "em_uma_frase": "The reference repertoire of Academically Productive Talk: eight moves to deepen reasoning and get participants to listen to each other.",
+      "o_nome": "APT stands for Academically Productive Talk, the talk moves framework Clair builds on. 'Base' marks the core set of moves from that tradition, with no explicit pedagogical goals and no content from a specific topic. That is why it is the default: it works with any subject and serves as a baseline for comparing the other modes.",
+      "o_conjunto": "The eight moves serve three functions. Deepening what someone said (extend the reasoning, ask for an example). Getting peers to listen to each other (agree or disagree, restate in their own words, add on, link their own idea to another's, build on what has been said). And organizing what the group has built so far (recap). Several moves address a person by name and speak of the 'partner': they hand the floor back to the participants instead of answering for them, which fits a Clair that does not teach content.",
+      "como_age": "Each move has a rule that combines dialogue state signals (dominance and coordination, type of utterance such as initiating or arguing, similarity to the topic, time and pace). It only acts when certainty exceeds 0.75. For example, the recap is tied to low similarity to the topic and high time, and 'agree or disagree' to argumentation with high coordination. [to be confirmed]",
+      "jogadas": [
+        {
+          "nome": "Extend the reasoning",
+          "exemplo": "<speaker>, could you please elaborate more on this?"
+        },
+        {
+          "nome": "Ask for an example",
+          "exemplo": "<speaker>, could you give an example?"
+        },
+        {
+          "nome": "Build on what was said",
+          "exemplo": "<speaker>, how does this add to what <discussant> already said?"
+        },
+        {
+          "nome": "Agree or disagree",
+          "exemplo": "<discussant>, do you agree or disagree with your partner?"
+        },
+        {
+          "nome": "Link contributions",
+          "exemplo": "<discussant>, considering what <speaker> just said, how does your idea fit in?"
+        },
+        {
+          "nome": "Restate",
+          "exemplo": "<discussant>, could you put in other words what your partner just said?"
+        },
+        {
+          "nome": "Add on",
+          "exemplo": "<discussant>, do you have anything to add to what your partner just said?"
+        },
+        {
+          "nome": "Recap",
+          "exemplo": "This conversation is interesting. Would any of you be able to give a brief summary of what you've covered so far?"
+        }
+      ],
+      "indicado_para": [
+        "First demonstration of Clair.",
+        "Any topic: it does not depend on material prepared for the content.",
+        "Baseline for comparing with the other modes.",
+        "Five languages: EN, PT, NL, ZH and DE."
+      ],
+      "cuidados": [
+        "No move is tied to silence: someone who stays quiet goes unnoticed (compare with apt-goals). [to be confirmed]",
+        "The sentences speak of the 'partner', that is, they were written for pairs.",
+        "No explicit pedagogical goals: Clair reacts to conversation patterns, not to a lesson plan."
+      ],
+      "idiomas": [
+        "EN",
+        "PT",
+        "NL",
+        "ZH",
+        "DE"
+      ],
+      "sinais": 12
+    },
+    {
+      "id": "apt-goals",
+      "rotulo": "apt-goals",
+      "em_uma_frase": "APT organized by pedagogical goals: Clair can start the conversation on her own, invite those who are quiet, redirect back to the lesson and propose hypothetical questions.",
+      "o_nome": "'Goals' indicates that the moves are no longer a flat repertoire and now serve numbered goals: check-in is goal 1; redirecting, coordinating peers and getting them to ask each other questions are goal 2; what-if is goal 3; pressing for reasoning is goal 4. The numbering suggests a progression, from keeping people participating and on task to requiring justification [to be confirmed].",
+      "o_conjunto": "Six moves, and this changes Clair's role: instead of only reacting to what was said, she also looks after those who are not speaking. The check-in invites the group to share their progress; the redirect brings the discussion back to the lesson; coordination asks one peer to help another with the next step; peer questions encourage asking a peer rather than her; the what-if poses a hypothesis ('what would happen if…'); and pressing for reasoning asks for elaboration or an example. Three of the moves have ready-made follow-up questions (for example, asking the author to explain why they think so), so Clair leads short sequences, not isolated comments.",
+      "como_age": "According to the rules, the check-in depends on the TSLM signal and on time, the redirect on the COFF signal, peer coordination on coordination between peers with no question and on the L3_CU signal, and peer questions on the TSLQ signal [to be confirmed: the meaning of TSLM, COFF and TSLQ; I read them as time since last message, conversation off topic and time since last question]. Since she can speak without a triggering message, the interface needs to poll the server periodically (proactive check).",
+      "jogadas": [
+        {
+          "nome": "Check-in (goal 1)",
+          "exemplo": "It seems a bit quiet in this corner. Would you like to share your current progress and if there's anything you're unsure about the next steps?"
+        },
+        {
+          "nome": "Redirect (goal 2)",
+          "exemplo": "I'm getting a bit lost here. Shall we redirect your discussion back to the lesson?"
+        },
+        {
+          "nome": "Peer coordination (goal 2)",
+          "exemplo": "<discussant>, could you help <speaker>? Please share what you think might be a good next step."
+        },
+        {
+          "nome": "Peer questions (goal 2)",
+          "exemplo": "<discussant>, got any questions for <speaker> about something you are finding difficult to understand?"
+        },
+        {
+          "nome": "What-if (goal 3)",
+          "exemplo": "<speaker>, what do you think would happen if the particle didn't fit the enzyme's shape?"
+        },
+        {
+          "nome": "Press for reasoning (goal 4)",
+          "exemplo": "<discussant>, could you elaborate more on what <speaker> said or give one example to illustrate?"
+        }
+      ],
+      "indicado_para": [
+        "Showing Clair starting the conversation on her own.",
+        "Activities with clear goals: participation, focus on the lesson, justification.",
+        "Enzymes (digestion) and Genetics topics, which have ready-made what-if questions. [to be confirmed]",
+        "Six languages: EN, NL, PT, ES, DE and ZH."
+      ],
+      "cuidados": [
+        "The what-if questions exist only for Enzymes and Genetics; on other topics, goal 3 has no ready-made material. [to be confirmed]",
+        "It was built around a lesson (the sentences speak of 'lesson') with Dutch conversations about Enzymes. [to be confirmed]",
+        "Needs the proactive check turned on so Clair can speak on her own."
+      ],
+      "idiomas": [
+        "EN",
+        "NL",
+        "PT",
+        "ES",
+        "DE",
+        "ZH"
+      ],
+      "sinais": 15
+    },
+    {
+      "id": "self-determination",
+      "rotulo": "self-determination",
+      "em_uma_frase": "Motivational support instead of pressure for reasoning: three moves that offer choice and reinforce competence and connection among peers.",
+      "o_nome": "This is Self-Determination Theory, which identifies three basic psychological needs: autonomy, competence and relatedness. The mode's three moves carry exactly these names, so the design translates the theory directly: instead of demanding more argumentation, Clair tries to sustain the motivation to keep talking.",
+      "o_conjunto": "Autonomy: invites the person to elaborate or give an example, but makes it explicit that they may prefer to continue the conversation ('I appreciate your choice'). Competence: links the utterance to what has already been discussed and then reinforces that each contribution improves understanding. Relatedness: asks how the ideas match or differ from the peer's and thanks them for sharing. The repertoire is minimal: one sentence per move, plus two thank-you messages per move. This is a mode for observing the effect of a supportive tone, not for variety of interventions.",
+      "como_age": "Decides with few signals (type of utterance, closeness to the topic, pace) and stays quiet when the message is a question. [to be confirmed]",
+      "jogadas": [
+        {
+          "nome": "Autonomy support",
+          "exemplo": "<speaker>, could you elaborate on this or give an example to your partner? Or would you rather continue with the conversation? I appreciate your choice."
+        },
+        {
+          "nome": "Competence support",
+          "exemplo": "<speaker>, how does this connect with what we have discussed so far?"
+        },
+        {
+          "nome": "Relatedness support",
+          "exemplo": "<discussant>, how do your ideas match or differ from your partner's ideas? What else would you like to add?"
+        }
+      ],
+      "indicado_para": [
+        "Comparing a motivational support style with APT's pressure-for-reasoning style.",
+        "Demonstrations where you want a gentler, less demanding Clair."
+      ],
+      "cuidados": [
+        "Only one language: EN. [to be confirmed]",
+        "A single sentence per move: it becomes repetitive in long conversations.",
+        "Uses fewer conversation signals (9) than the other modes (12 to 18)."
+      ],
+      "idiomas": [
+        "EN"
+      ],
+      "sinais": 9
+    },
+    {
+      "id": "ssrl",
+      "rotulo": "ssrl",
+      "em_uma_frase": "Socially shared regulation of learning: interventions aimed at the whole group, about understanding, joint planning, participation and climate.",
+      "o_nome": "SSRL usually stands for Socially Shared Regulation of Learning, the regulation of learning that the group carries out together [to be confirmed]. The five moves say the same: cognitive, metacognitive, behavioral, socioemotional and shared perspective. The focus shifts from individual contribution to how the group functions.",
+      "o_conjunto": "The sentences address everyone ('explain to each other', 'how could you help each other'), without calling anyone by name, unlike APT. Each move has 3 or 4 variations, the most varied repertoire among the modes. Cognitive: deals with confusion and shared understanding of concepts and resources. Metacognitive: asks them to talk about how they understand the task and how to move forward together. Behavioral: draws attention to those who may not have participated. Socioemotional: appears when the tone heats up and asks for a friendlier conversation. Shared perspective: reminds them that the goal belongs to the group and asks for a common plan. Behavioral and shared perspective trigger only once, so they do not turn into nagging.",
+      "como_age": "This is the mode with the most signals (18), including uneven participation among members and signs of negative emotion [to be confirmed: the meaning of the signals]. It triggers the behavioral and shared perspective moves only once [to be confirmed whether the limit is per session or per group]. [to be confirmed]",
+      "jogadas": [
+        {
+          "nome": "Cognitive",
+          "exemplo": "There seems to be some confusion in the air. Explain to each other again what you are trying to understand at the moment."
+        },
+        {
+          "nome": "Metacognitive",
+          "exemplo": "Excellent reflection! How could you help each other to move forward as a group?"
+        },
+        {
+          "nome": "Behavioral",
+          "exemplo": "Hmm - I wonder if everyone has had a chance to make their voice heard?"
+        },
+        {
+          "nome": "Socioemotional",
+          "exemplo": "Working together is sometimes challenging! How could you make sure that everyone is still on good terms?"
+        },
+        {
+          "nome": "Shared perspective",
+          "exemplo": "I noticed that you may be thinking from your own perspective. What could be your common plan to solve the problem?"
+        }
+      ],
+      "indicado_para": [
+        "Group work with three or more people (the sentences speak of 'you' and 'the group', not 'partner').",
+        "Tasks where balanced participation and group climate matter.",
+        "Demonstrating a Clair more focused on the group's process than on content."
+      ],
+      "cuidados": [
+        "Only one language: EN. [to be confirmed]",
+        "The mode's data folder is Chats-FI-ForceEnergy-2023 (a force and energy task); calibration for other contexts is not documented here. [to be confirmed]"
+      ],
+      "idiomas": [
+        "EN"
+      ],
+      "sinais": 18
+    }
+  ],
+  "comparativo": {
+    "colunas": [
+      "Mode",
+      "Moves",
+      "Addresses",
+      "Specific topic",
+      "Languages",
+      "Signals"
+    ],
+    "linhas": [
+      [
+        "apt-base (default)",
+        "8",
+        "People by name, speaking of the 'partner'",
+        "No",
+        "EN, PT, NL, ZH, DE",
+        "12"
+      ],
+      [
+        "apt-goals",
+        "6",
+        "People by name and the group (check-in, redirect)",
+        "Yes, for the what-if (Enzymes, Genetics)",
+        "EN, NL, PT, ES, DE, ZH",
+        "15"
+      ],
+      [
+        "self-determination",
+        "3",
+        "People by name",
+        "No",
+        "EN",
+        "9"
+      ],
+      [
+        "ssrl",
+        "5",
+        "The whole group, no names",
+        "No",
+        "EN",
+        "18"
+      ]
+    ]
+  },
+  "legenda_placeholders": "In the example sentences, <speaker> is the person who just spoke and <discussant> is another group participant [to be confirmed].",
+  "incertezas": [
+    "The four READMEs say 'Documentation under construction'. This guide comes from config.yml, rules.yml, talk_moves.yml, followups.yml and what_ifs.",
+    "It was read from the copy in ~/Documents/clair, which may differ from the deployed image. The official list of languages for each mode is the one the API returns from GET /languages/{mode}.",
+    "The meaning of signals such as TSLM, TSLQ, COFF, TSIM and GINI was inferred from the names of the rules and sentences.",
+    "The readings of the names (goals 1 to 4 of apt-goals; SSRL) are interpretation and are marked [to be confirmed]."
+  ]
+}

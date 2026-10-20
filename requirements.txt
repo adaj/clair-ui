@@ -1,0 +1,5 @@
+gradio==6.30.0
+requests==2.34.2
+matplotlib==3.11.2
+# simulador de alunos (Simulacao); o tarball da tag dispensa git na imagem
+collabsim @ https://github.com/adaj/collabsim/archive/refs/tags/v0.5.3.tar.gz

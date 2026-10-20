@@ -1,0 +1,254 @@
+{
+  "_status": "Entwurf zur Überprüfung durch den Autor",
+  "_fonte": "Gelesen aus ~/Documents/clair/triggering/modes (config.yml, rules.yml, talk_moves.yml, followups.yml, what_ifs und small_talk.yml). Die READMEs der vier Modi sagen „Documentation under construction“. Mit [zu bestätigen] markierte Stellen sind Interpretation und müssen überprüft werden.",
+  "geral": {
+    "titulo": "In allen Modi",
+    "texto": "Clair antwortet direkt auf Gespräche mit ihr (small talk): Sie begrüßt die Gruppe (die Begrüßung „Hi everyone, my name is Clair…“; laut Autor begrüßt sie auch, wenn zwei Personen dem Chat beitreten [zu bestätigen, wie der Server das entscheidet]), bestätigt, dass sie noch da ist, sagt, wie es ihr geht, und wer sie ist. Wenn um Hilfe gebeten wird, schlägt sie vor, den Partner zu fragen, und bei einer inhaltlichen Frage sagt sie, dass sie nicht genug weiß, um zu antworten. Ihre Rolle ist es, die Diskussion zwischen den Personen zu fördern, nicht Quelle von Antworten zu sein. Diese Antworten gibt es in allen gelesenen Modi (in jeder Sprache des Modus). Was sich von Modus zu Modus ändert, ist das Repertoire an Spielzügen (talk moves), die Gesprächssignale, die über den Zeitpunkt des Eingreifens entscheiden, und die verfügbaren Sprachen."
+  },
+  "modos": [
+    {
+      "id": "apt-base",
+      "rotulo": "apt-base (Standard)",
+      "em_uma_frase": "Das Referenzrepertoire von Academically Productive Talk: acht Spielzüge, um das Denken zu vertiefen und die Teilnehmenden zum Zuhören zu bringen.",
+      "o_nome": "APT steht für Academically Productive Talk, das Referenzmodell der talk moves, auf dem Clair beruht. „Base“ bezeichnet das Kernrepertoire dieser Tradition, ohne ausdrückliche pädagogische Ziele und ohne Inhalte zu einem bestimmten Thema. Deshalb ist es der Standard: Es funktioniert mit jedem Thema und dient als Baseline für den Vergleich mit den anderen Modi.",
+      "o_conjunto": "Die acht Spielzüge erfüllen drei Funktionen. Vertiefen, was jemand gesagt hat (das Denken erweitern, um ein Beispiel bitten). Die Mitlernenden dazu bringen, einander zuzuhören (zustimmen oder widersprechen, mit eigenen Worten wiedergeben, ergänzen, die eigene Idee mit der des anderen verbinden, auf dem Gesagten aufbauen). Und das bisher Erarbeitete der Gruppe ordnen (zusammenfassen). Mehrere Spielzüge sprechen eine Person mit Namen an und beziehen sich auf den „Partner“: Sie geben das Wort an die Teilnehmenden zurück, statt für sie zu antworten, was zu einer Clair passt, die keine Inhalte vermittelt.",
+      "como_age": "Jeder Spielzug hat eine Regel, die Signale des dialogue state kombiniert (Dominanz und Koordination, Sprechhandlungstyp wie Beginnen oder Argumentieren, Ähnlichkeit zum Thema, Zeit und Rhythmus). Sie greift nur ein, wenn die Sicherheit über 0,75 liegt. Die Zusammenfassung ist zum Beispiel an geringe Themenähnlichkeit und hohe Zeitdauer gebunden, „zustimmen oder widersprechen“ an Argumentation mit hoher Koordination. [zu bestätigen]",
+      "jogadas": [
+        {
+          "nome": "Das Denken erweitern",
+          "exemplo": "<speaker>, could you please elaborate more on this?"
+        },
+        {
+          "nome": "Ein Beispiel geben lassen",
+          "exemplo": "<speaker>, could you give an example?"
+        },
+        {
+          "nome": "Auf dem Gesagten aufbauen",
+          "exemplo": "<speaker>, how does this add to what <discussant> already said?"
+        },
+        {
+          "nome": "Zustimmen oder widersprechen",
+          "exemplo": "<discussant>, do you agree or disagree with your partner?"
+        },
+        {
+          "nome": "Beiträge verknüpfen",
+          "exemplo": "<discussant>, considering what <speaker> just said, how does your idea fit in?"
+        },
+        {
+          "nome": "Mit eigenen Worten wiedergeben",
+          "exemplo": "<discussant>, could you put in other words what your partner just said?"
+        },
+        {
+          "nome": "Ergänzen",
+          "exemplo": "<discussant>, do you have anything to add to what your partner just said?"
+        },
+        {
+          "nome": "Zusammenfassen",
+          "exemplo": "This conversation is interesting. Would any of you be able to give a brief summary of what you've covered so far?"
+        }
+      ],
+      "indicado_para": [
+        "Erste Demonstration von Clair.",
+        "Jedes Thema: keine inhaltlich vorbereiteten Materialien nötig.",
+        "Baseline für den Vergleich mit den anderen Modi.",
+        "Fünf Sprachen: EN, PT, NL, ZH und DE."
+      ],
+      "cuidados": [
+        "Es gibt keinen Spielzug für Schweigen: Wer still bleibt, wird übersehen (vergleiche apt-goals). [zu bestätigen]",
+        "Die Sätze sprechen vom „Partner“, wurden also für Paare geschrieben.",
+        "Keine ausdrücklichen pädagogischen Ziele: Clair reagiert auf Gesprächsmuster, nicht auf einen Unterrichtsplan."
+      ],
+      "idiomas": [
+        "EN",
+        "PT",
+        "NL",
+        "ZH",
+        "DE"
+      ],
+      "sinais": 12
+    },
+    {
+      "id": "apt-goals",
+      "rotulo": "apt-goals",
+      "em_uma_frase": "APT, nach pädagogischen Zielen geordnet: Clair kann das Gespräch von sich aus anstoßen, stille Personen einladen, zum Unterricht zurücklenken und hypothetische Fragen vorschlagen.",
+      "o_nome": "„Goals“ zeigt an, dass die Spielzüge kein flaches Repertoire mehr sind, sondern nummerierten Zielen dienen: Der Check-in ist Ziel 1; Zurücklenken, Mitlernende koordinieren und sie dazu bringen, einander zu fragen, sind Ziel 2; das What-if ist Ziel 3; das Nachfragen zum Denken ist Ziel 4. Die Nummerierung legt eine Progression nahe, vom Dabeibleiben und Bei-der-Aufgabe-Bleiben bis zur Forderung nach Begründung [zu bestätigen].",
+      "o_conjunto": "Sechs Spielzüge, und das verändert die Rolle von Clair: Statt nur auf das Gesagte zu reagieren, kümmert sie sich auch um die, die nicht sprechen. Der Check-in lädt die Gruppe ein, den Fortschritt zu schildern; das Zurücklenken bringt die Diskussion zurück zum Unterricht; die Koordination bittet eine Person, einer anderen beim nächsten Schritt zu helfen; die Peer-Fragen ermutigen dazu, die Mitlernenden statt sie zu fragen; das What-if stellt eine Hypothese („Was würde passieren, wenn …“); und das Nachfragen zum Denken bittet um Ausführung oder ein Beispiel. Drei der Spielzüge haben vorbereitete Folgefragen (zum Beispiel die Bitte, dass die Person erklärt, warum sie so denkt), sodass Clair kleine Sequenzen führt, nicht einzelne Kommentare.",
+      "como_age": "Laut den Regeln hängt der Check-in vom Signal TSLM und der Zeit ab, das Zurücklenken vom Signal COFF, die Koordination unter Peers von der Koordination zwischen Mitlernenden ohne Frage und vom Signal L3_CU, und die Peer-Fragen vom Signal TSLQ [zu bestätigen, was TSLM, COFF und TSLQ bedeuten: Ich lese sie als Zeit seit der letzten Nachricht, Gespräch abseits des Themas und Zeit seit der letzten Frage]. Da sie ohne auslösende Nachricht sprechen kann, muss die Oberfläche den Server regelmäßig abfragen (proaktive Abfrage).",
+      "jogadas": [
+        {
+          "nome": "Check-in (Ziel 1)",
+          "exemplo": "It seems a bit quiet in this corner. Would you like to share your current progress and if there's anything you're unsure about the next steps?"
+        },
+        {
+          "nome": "Zurücklenken (Ziel 2)",
+          "exemplo": "I'm getting a bit lost here. Shall we redirect your discussion back to the lesson?"
+        },
+        {
+          "nome": "Koordination unter Peers (Ziel 2)",
+          "exemplo": "<discussant>, could you help <speaker>? Please share what you think might be a good next step."
+        },
+        {
+          "nome": "Peer-Fragen (Ziel 2)",
+          "exemplo": "<discussant>, got any questions for <speaker> about something you are finding difficult to understand?"
+        },
+        {
+          "nome": "What-if (Ziel 3)",
+          "exemplo": "<speaker>, what do you think would happen if the particle didn't fit the enzyme's shape?"
+        },
+        {
+          "nome": "Nachfragen zum Denken (Ziel 4)",
+          "exemplo": "<discussant>, could you elaborate more on what <speaker> said or give one example to illustrate?"
+        }
+      ],
+      "indicado_para": [
+        "Zeigen, wie Clair das Gespräch von sich aus anstößt.",
+        "Aktivitäten mit klaren Zielen: Beteiligung, Fokus auf die Lektion, Begründung.",
+        "Themen Enzyme (Verdauung) und Genetik, für die What-if-Fragen vorbereitet sind. [zu bestätigen]",
+        "Sechs Sprachen: EN, NL, PT, ES, DE und ZH."
+      ],
+      "cuidados": [
+        "Die What-if-Fragen gibt es nur für Enzyme und Genetik; bei anderen Themen hat Ziel 3 kein vorbereitetes Material. [zu bestätigen]",
+        "Der Modus wurde um eine Unterrichtsstunde herum gebaut (die Sätze sprechen von „Lektion“), mit niederländischen Gesprächen über Enzyme. [zu bestätigen]",
+        "Die proaktive Abfrage muss eingeschaltet sein, damit Clair von sich aus sprechen kann."
+      ],
+      "idiomas": [
+        "EN",
+        "NL",
+        "PT",
+        "ES",
+        "DE",
+        "ZH"
+      ],
+      "sinais": 15
+    },
+    {
+      "id": "self-determination",
+      "rotulo": "self-determination",
+      "em_uma_frase": "Motivationale Unterstützung statt Druck zum Begründen: drei Spielzüge, die Wahlmöglichkeit anbieten und Kompetenz sowie Verbundenheit unter Mitlernenden stärken.",
+      "o_nome": "Gemeint ist die Selbstbestimmungstheorie, die drei psychologische Grundbedürfnisse nennt: Autonomie, Kompetenz und Zugehörigkeit (relatedness). Die drei Spielzüge des Modus tragen genau diese Namen, das Design übersetzt die Theorie also direkt: Statt mehr Argumentation zu verlangen, versucht Clair, die Motivation zum Weitersprechen zu stützen.",
+      "o_conjunto": "Autonomie: lädt dazu ein, auszuführen oder ein Beispiel zu geben, macht aber deutlich, dass die Person auch lieber im Gespräch weitermachen kann („ich schätze Ihre Wahl“). Kompetenz: verknüpft die Äußerung mit dem bisher Besprochenen und betont dann, dass jeder Beitrag das Verständnis verbessert. Zugehörigkeit: fragt, wie die Ideen zu denen der Mitlernenden passen oder sich unterscheiden, und dankt fürs Teilen. Das Repertoire ist minimal: ein Satz pro Spielzug, dazu zwei Dankesnachrichten pro Spielzug. Es ist ein Modus, um die Wirkung eines unterstützenden Tons zu beobachten, nicht um Vielfalt an Interventionen zu haben.",
+      "como_age": "Entscheidet mit wenigen Signalen (Sprechhandlungstyp, Nähe zum Thema, Rhythmus) und bleibt still, wenn die Nachricht eine Frage ist. [zu bestätigen]",
+      "jogadas": [
+        {
+          "nome": "Autonomieunterstützung",
+          "exemplo": "<speaker>, could you elaborate on this or give an example to your partner? Or would you rather continue with the conversation? I appreciate your choice."
+        },
+        {
+          "nome": "Kompetenzunterstützung",
+          "exemplo": "<speaker>, how does this connect with what we have discussed so far?"
+        },
+        {
+          "nome": "Zugehörigkeitsunterstützung",
+          "exemplo": "<discussant>, how do your ideas match or differ from your partner's ideas? What else would you like to add?"
+        }
+      ],
+      "indicado_para": [
+        "Einen motivational unterstützenden Stil mit dem auf Begründung drängenden Stil von APT vergleichen.",
+        "Demonstrationen, in denen eine freundlichere, weniger fordernde Clair gewünscht ist."
+      ],
+      "cuidados": [
+        "Nur eine Sprache: EN. [zu bestätigen]",
+        "Nur ein Satz pro Spielzug: In langen Gesprächen wirkt das repetitiv.",
+        "Nutzt weniger Gesprächssignale (9) als die anderen Modi (12 bis 18)."
+      ],
+      "idiomas": [
+        "EN"
+      ],
+      "sinais": 9
+    },
+    {
+      "id": "ssrl",
+      "rotulo": "ssrl",
+      "em_uma_frase": "Gemeinsam geteilte Lernregulation: Interventionen für die ganze Gruppe zu Verständnis, gemeinsamer Planung, Beteiligung und Klima.",
+      "o_nome": "SSRL steht üblicherweise für Socially Shared Regulation of Learning, die Lernregulation, die die Gruppe gemeinsam leistet [zu bestätigen]. Die fünf Spielzüge sagen dasselbe: kognitiv, metakognitiv, verhaltensbezogen, sozioemotional und geteilte Perspektive. Der Fokus verschiebt sich vom individuellen Beitrag zum Funktionieren der Gruppe.",
+      "o_conjunto": "Die Sätze richten sich an alle („erklärt euch gegenseitig“, „wie könntet ihr euch gegenseitig helfen“), ohne jemanden mit Namen anzusprechen, anders als bei APT. Jeder Spielzug hat 3 oder 4 Varianten, das abwechslungsreichste Repertoire unter den Modi. Kognitiv: kümmert sich um Verwirrung und um ein gemeinsames Verständnis der Konzepte und Ressourcen. Metakognitiv: bittet darum, darüber zu sprechen, wie die Aufgabe verstanden wird und wie man gemeinsam weiterkommt. Verhaltensbezogen: lenkt die Aufmerksamkeit darauf, wer vielleicht noch nicht beteiligt war. Sozioemotional: erscheint, wenn der Ton hitzig wird, und bittet um ein freundlicheres Gespräch. Geteilte Perspektive: erinnert daran, dass das Ziel der Gruppe gehört, und bittet um einen gemeinsamen Plan. Verhaltensbezogen und geteilte Perspektive lösen nur einmal aus, damit es nicht wie eine Mahnung wirkt.",
+      "como_age": "Es ist der Modus mit den meisten Signalen (18), darunter ungleiche Beteiligung der Mitglieder und Signale negativer Emotion [zu bestätigen, was die Signale bedeuten]. Löst den verhaltensbezogenen und den Spielzug der geteilten Perspektive nur einmal aus [zu bestätigen, ob das Limit pro Sitzung oder pro Gruppe gilt]. [zu bestätigen]",
+      "jogadas": [
+        {
+          "nome": "Kognitiv",
+          "exemplo": "There seems to be some confusion in the air. Explain to each other again what you are trying to understand at the moment."
+        },
+        {
+          "nome": "Metakognitiv",
+          "exemplo": "Excellent reflection! How could you help each other to move forward as a group?"
+        },
+        {
+          "nome": "Verhaltensbezogen",
+          "exemplo": "Hmm - I wonder if everyone has had a chance to make their voice heard?"
+        },
+        {
+          "nome": "Sozioemotional",
+          "exemplo": "Working together is sometimes challenging! How could you make sure that everyone is still on good terms?"
+        },
+        {
+          "nome": "Geteilte Perspektive",
+          "exemplo": "I noticed that you may be thinking from your own perspective. What could be your common plan to solve the problem?"
+        }
+      ],
+      "indicado_para": [
+        "Gruppenarbeit mit drei oder mehr Personen (die Sätze sprechen von „ihr“ und „der Gruppe“, nicht vom „Partner“).",
+        "Aufgaben, bei denen ausgewogene Beteiligung und das Klima der Gruppe wichtig sind.",
+        "Eine Clair zeigen, die stärker auf den Prozess der Gruppe als auf den Inhalt ausgerichtet ist."
+      ],
+      "cuidados": [
+        "Nur eine Sprache: EN. [zu bestätigen]",
+        "Der Datenordner des Modus ist Chats-FI-ForceEnergy-2023 (Aufgabe zu Kraft und Energie); die Kalibrierung für andere Kontexte ist hier nicht dokumentiert. [zu bestätigen]"
+      ],
+      "idiomas": [
+        "EN"
+      ],
+      "sinais": 18
+    }
+  ],
+  "comparativo": {
+    "colunas": [
+      "Modus",
+      "Spielzüge",
+      "Richtet sich an",
+      "Spezifisches Thema",
+      "Sprachen",
+      "Signale"
+    ],
+    "linhas": [
+      [
+        "apt-base (Standard)",
+        "8",
+        "Personen mit Namen, spricht vom „Partner“",
+        "Nein",
+        "EN, PT, NL, ZH, DE",
+        "12"
+      ],
+      [
+        "apt-goals",
+        "6",
+        "Personen mit Namen und die Gruppe (Check-in, Zurücklenken)",
+        "Ja, für das What-if (Enzyme, Genetik)",
+        "EN, NL, PT, ES, DE, ZH",
+        "15"
+      ],
+      [
+        "self-determination",
+        "3",
+        "Personen mit Namen",
+        "Nein",
+        "EN",
+        "9"
+      ],
+      [
+        "ssrl",
+        "5",
+        "Die ganze Gruppe, ohne Namen",
+        "Nein",
+        "EN",
+        "18"
+      ]
+    ]
+  },
+  "legenda_placeholders": "In den Beispielsätzen ist <speaker> die Person, die gerade gesprochen hat, und <discussant> eine andere Person der Gruppe [zu bestätigen].",
+  "incertezas": [
+    "Die vier READMEs sagen „Documentation under construction“. Dieser Leitfaden stammt aus config.yml, rules.yml, talk_moves.yml, followups.yml und what_ifs.",
+    "Gelesen wurde die Kopie in ~/Documents/clair, die vom bereitgestellten Image abweichen kann. Die offizielle Sprachliste jedes Modus ist die, die die API unter GET /languages/{modo} zurückgibt.",
+    "Die Bedeutung von Signalen wie TSLM, TSLQ, COFF, TSIM und GINI wurde aus den Namen der Regeln und der Sätze abgeleitet.",
+    "Die Deutungen der Namen (Ziele 1 bis 4 von apt-goals; SSRL) sind Interpretation und mit [zu bestätigen] markiert."
+  ]
+}

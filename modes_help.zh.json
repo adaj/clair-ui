@@ -1,0 +1,254 @@
+{
+  "_status": "供作者审阅的草稿",
+  "_fonte": "读取自 ~/Documents/clair/triggering/modes（config.yml、rules.yml、talk_moves.yml、followups.yml、what_ifs 和 small_talk.yml）。四种模式的 README 都写着“Documentation under construction”。标有 [待确认 ...] 的片段是解读，需要审阅。",
+  "geral": {
+    "titulo": "所有模式通用",
+    "texto": "Clair 会直接回应针对她本人的对话（small talk）：向小组问好（问候语为“Hi everyone, my name is Clair…”；作者说明，当两位成员加入聊天时她也会问好 [待确认 服务器如何判定这一点]），确认自己仍在线，说明自己的状态和身份。当成员求助时，她会建议去问搭档；当成员提出内容性问题时，她会说自己了解得不够，无法回答。她的角色是促进成员之间的讨论，而不是充当答案的来源。在已读取的所有模式中都有这些回应（每种语言各有对应版本）。模式之间的差异在于 talk move(对话策略) 的集合、决定何时介入的对话信号，以及可用的语言。"
+  },
+  "modos": [
+    {
+      "id": "apt-base",
+      "rotulo": "apt-base（默认）",
+      "em_uma_frase": "Academically Productive Talk 的基准策略库：八个 talk move，用来深化推理，并促使参与者彼此倾听。",
+      "o_nome": "APT 即 Academically Productive Talk，是 Clair 所依据的 talk move(对话策略) 框架。“Base”表示这一传统的核心 talk move 集合，没有明确的教学目标，也不针对特定主题的内容。因此它是默认模式：适用于任何话题，也可作为与其他模式比较的基线。",
+      "o_conjunto": "这八个 talk move 承担三种功能。深化某人所说的内容（拓展推理、请对方举例）。让同伴彼此倾听（同意或不同意、用自己的话复述、补充、把自己的想法与他人的联系起来、在已有内容上延伸）。以及梳理小组已经构建的内容（总结回顾）。多个 talk move 会点名称呼某位成员，并提到“搭档”：它们把发言权交还给参与者，而不是替他们回答，这与不讲授内容的 Clair 相契合。",
+      "como_age": "每个 talk move 都有一条规则，结合 dialogue state（对话状态）的各项信号：主导性与协调性、发言类型（如发起或论证）、与主题的相似度、时间与节奏。只有当置信度超过 0.75 时才会行动。例如，总结回顾对应与主题相似度低且时间较长的情形，“同意或不同意”则对应协调性高的论证。 [待确认]",
+      "jogadas": [
+        {
+          "nome": "拓展推理",
+          "exemplo": "<speaker>, could you please elaborate more on this?"
+        },
+        {
+          "nome": "举例说明",
+          "exemplo": "<speaker>, could you give an example?"
+        },
+        {
+          "nome": "在已有内容上延伸",
+          "exemplo": "<speaker>, how does this add to what <discussant> already said?"
+        },
+        {
+          "nome": "同意或不同意",
+          "exemplo": "<discussant>, do you agree or disagree with your partner?"
+        },
+        {
+          "nome": "关联观点",
+          "exemplo": "<discussant>, considering what <speaker> just said, how does your idea fit in?"
+        },
+        {
+          "nome": "复述",
+          "exemplo": "<discussant>, could you put in other words what your partner just said?"
+        },
+        {
+          "nome": "补充",
+          "exemplo": "<discussant>, do you have anything to add to what your partner just said?"
+        },
+        {
+          "nome": "总结回顾",
+          "exemplo": "This conversation is interesting. Would any of you be able to give a brief summary of what you've covered so far?"
+        }
+      ],
+      "indicado_para": [
+        "初次演示 Clair。",
+        "任何主题：不依赖为内容预先准备的材料。",
+        "作为与其他模式比较的基线。",
+        "五种语言：EN、PT、NL、ZH 和 DE。"
+      ],
+      "cuidados": [
+        "没有与沉默相关的 talk move：保持沉默的人容易被忽略（可与 apt-goals 对比）。 [待确认]",
+        "这些语句提到“搭档”，也就是说它们是为两人小组编写的。",
+        "没有明确的教学目标：Clair 对对话模式作出反应，而不是遵循教案。"
+      ],
+      "idiomas": [
+        "EN",
+        "PT",
+        "NL",
+        "ZH",
+        "DE"
+      ],
+      "sinais": 12
+    },
+    {
+      "id": "apt-goals",
+      "rotulo": "apt-goals",
+      "em_uma_frase": "按教学目标组织的 APT：Clair 可以主动带动对话、邀请沉默的人发言、把讨论拉回课程，并提出假设性问题。",
+      "o_nome": "“Goals”表示 talk move 不再是平铺的策略库，而是服务于带编号的目标：check-in 是目标 1；重新聚焦、协调同伴以及让他们彼此提问是目标 2；what-if 是目标 3；追问推理是目标 4。这一编号暗示了一个递进过程：从让大家持续参与并专注于任务，到要求给出理由 [待确认 目标编号的含义]。",
+      "o_conjunto": "共有六个 talk move，这改变了 Clair 的角色：她不再只是对已说的内容作出反应，还会关照没有发言的人。check-in 邀请小组汇报进展；重新聚焦把讨论带回课程；协作请一位同伴帮助另一位完成下一步；同伴提问鼓励向同伴而不是向她提问；what-if 抛出假设（“如果……会发生什么”）；追问推理则要求展开说明或举例。其中三个 talk move 备有现成的后续问题（例如请发言者解释为什么这样想），因此 Clair 会进行一小段连续的引导，而不是孤立的评论。",
+      "como_age": "根据规则，check-in 取决于信号 TSLM 和时间，重新聚焦取决于信号 COFF，同伴协作取决于“同伴之间的协调且没有提问”以及信号 L3_CU，同伴提问取决于信号 TSLQ [待确认 TSLM、COFF 和 TSLQ 的含义：我的理解分别是距上一条消息的时间、偏离主题的对话、距上一个问题的时间]。由于她可以在没有触发消息的情况下发言，界面需要定期查询服务器（主动查询）。",
+      "jogadas": [
+        {
+          "nome": "Check-in（目标 1）",
+          "exemplo": "It seems a bit quiet in this corner. Would you like to share your current progress and if there's anything you're unsure about the next steps?"
+        },
+        {
+          "nome": "重新聚焦（目标 2）",
+          "exemplo": "I'm getting a bit lost here. Shall we redirect your discussion back to the lesson?"
+        },
+        {
+          "nome": "同伴协作（目标 2）",
+          "exemplo": "<discussant>, could you help <speaker>? Please share what you think might be a good next step."
+        },
+        {
+          "nome": "同伴提问（目标 2）",
+          "exemplo": "<discussant>, got any questions for <speaker> about something you are finding difficult to understand?"
+        },
+        {
+          "nome": "What-if（目标 3）",
+          "exemplo": "<speaker>, what do you think would happen if the particle didn't fit the enzyme's shape?"
+        },
+        {
+          "nome": "追问推理（目标 4）",
+          "exemplo": "<discussant>, could you elaborate more on what <speaker> said or give one example to illustrate?"
+        }
+      ],
+      "indicado_para": [
+        "展示 Clair 主动带动对话。",
+        "目标明确的活动：参与度、专注于课程、说明理由。",
+        "酶（消化）与遗传学主题，这两个主题备有现成的 what-if 问题。 [待确认]",
+        "六种语言：EN、NL、PT、ES、DE 和 ZH。"
+      ],
+      "cuidados": [
+        "what-if 问题只有酶和遗传学两个主题；其他主题的目标 3 没有现成素材。 [待确认]",
+        "它围绕一堂课构建（语句中提到“课程”），对话为关于酶的荷兰语对话。 [待确认]",
+        "需要开启主动查询，Clair 才能主动发言。"
+      ],
+      "idiomas": [
+        "EN",
+        "NL",
+        "PT",
+        "ES",
+        "DE",
+        "ZH"
+      ],
+      "sinais": 15
+    },
+    {
+      "id": "self-determination",
+      "rotulo": "self-determination",
+      "em_uma_frase": "以动机支持代替推理压力：三个 talk move，提供选择，强化胜任感以及同伴之间的联结。",
+      "o_nome": "指自我决定理论（Self-Determination Theory），它提出三种基本心理需求：自主、胜任和归属（relatedness）。该模式的三个 talk move 正是以这些名称命名，因此设计直接对应理论：Clair 不是要求更多论证，而是努力维持继续交谈的动机。",
+      "o_conjunto": "自主：邀请对方展开说明或举例，但明确表示对方也可以选择继续对话（“I appreciate your choice”）。胜任：把发言与已讨论的内容联系起来，然后强调每一次贡献都在增进理解。归属：询问这些想法与同伴的想法如何契合或不同，并感谢对方的分享。策略库极简：每个 talk move 一句话，外加两条感谢消息。这个模式适合观察支持性语气的效果，而不是追求干预的多样性。",
+      "como_age": "依据的信号很少（发言类型、与主题的接近程度、节奏），当消息是提问时保持安静。 [待确认]",
+      "jogadas": [
+        {
+          "nome": "支持自主",
+          "exemplo": "<speaker>, could you elaborate on this or give an example to your partner? Or would you rather continue with the conversation? I appreciate your choice."
+        },
+        {
+          "nome": "支持胜任感",
+          "exemplo": "<speaker>, how does this connect with what we have discussed so far?"
+        },
+        {
+          "nome": "支持归属感",
+          "exemplo": "<discussant>, how do your ideas match or differ from your partner's ideas? What else would you like to add?"
+        }
+      ],
+      "indicado_para": [
+        "把动机支持风格与 APT 的推理压力风格进行比较。",
+        "希望 Clair 更温和、要求更少的演示。"
+      ],
+      "cuidados": [
+        "只有一种语言：EN。 [待确认]",
+        "每个 talk move 只有一句话：对话较长时会显得重复。",
+        "使用的对话信号（9 个）比其他模式（12 至 18 个）少。"
+      ],
+      "idiomas": [
+        "EN"
+      ],
+      "sinais": 9
+    },
+    {
+      "id": "ssrl",
+      "rotulo": "ssrl",
+      "em_uma_frase": "共享的学习调节：面向整个小组的干预，涉及理解、共同规划、参与和氛围。",
+      "o_nome": "SSRL 通常指 Socially Shared Regulation of Learning，即小组共同完成的学习调节 [待确认 缩写含义]。五个 talk move 的名称也体现了这一点：认知、元认知、行为、社会情感和共享视角。关注点从个人的贡献转向小组的运作。",
+      "o_conjunto": "语句面向所有人（“互相解释一下”“你们如何互相帮助”），不像 APT 那样点名称呼任何人。每个 talk move 有 3 或 4 种变体，是各模式中最丰富的策略库。认知：处理困惑，以及对概念和资源的共同理解。元认知：请大家谈谈如何理解任务以及如何一起推进。行为：提醒注意可能没有参与的人。社会情感：当气氛变得紧张时出现，请大家以更友好的方式交谈。共享视角：提醒目标属于小组，并请大家制定共同计划。行为和共享视角只会触发一次，以免变成催促。",
+      "como_age": "这是信号最多（18 个）的模式，包括成员之间参与不均衡以及负面情绪的信号 [待确认 这些信号的含义]。行为和共享视角的 talk move 只触发一次 [待确认 该限制是按会话还是按小组计算]。 [待确认]",
+      "jogadas": [
+        {
+          "nome": "认知",
+          "exemplo": "There seems to be some confusion in the air. Explain to each other again what you are trying to understand at the moment."
+        },
+        {
+          "nome": "元认知",
+          "exemplo": "Excellent reflection! How could you help each other to move forward as a group?"
+        },
+        {
+          "nome": "行为",
+          "exemplo": "Hmm - I wonder if everyone has had a chance to make their voice heard?"
+        },
+        {
+          "nome": "社会情感",
+          "exemplo": "Working together is sometimes challenging! How could you make sure that everyone is still on good terms?"
+        },
+        {
+          "nome": "共享视角",
+          "exemplo": "I noticed that you may be thinking from your own perspective. What could be your common plan to solve the problem?"
+        }
+      ],
+      "indicado_para": [
+        "三人及以上的小组协作（语句使用“你们”和“小组”，而不是“搭档”）。",
+        "参与均衡和小组氛围很重要的任务。",
+        "展示更关注小组过程而非内容的 Clair。"
+      ],
+      "cuidados": [
+        "只有一种语言：EN。 [待确认]",
+        "该模式的数据文件夹是 Chats-FI-ForceEnergy-2023（力与能量任务）；这里没有记录针对其他情境的校准。 [待确认]"
+      ],
+      "idiomas": [
+        "EN"
+      ],
+      "sinais": 18
+    }
+  ],
+  "comparativo": {
+    "colunas": [
+      "模式",
+      "Talk move 数量",
+      "面向对象",
+      "特定主题",
+      "语言",
+      "信号"
+    ],
+    "linhas": [
+      [
+        "apt-base（默认）",
+        "8",
+        "按姓名称呼成员，并提到“搭档”",
+        "无",
+        "EN, PT, NL, ZH, DE",
+        "12"
+      ],
+      [
+        "apt-goals",
+        "6",
+        "按姓名称呼成员，也面向小组（check-in、重新聚焦）",
+        "有，用于 what-if（酶、遗传学）",
+        "EN, NL, PT, ES, DE, ZH",
+        "15"
+      ],
+      [
+        "self-determination",
+        "3",
+        "按姓名称呼成员",
+        "无",
+        "EN",
+        "9"
+      ],
+      [
+        "ssrl",
+        "5",
+        "整个小组，不点名",
+        "无",
+        "EN",
+        "18"
+      ]
+    ]
+  },
+  "legenda_placeholders": "在示例语句中，<speaker> 是刚刚发言的人，<discussant> 是小组中的另一位参与者 [待确认 占位符的含义]。",
+  "incertezas": [
+    "四种模式的 README 都写着“Documentation under construction”。本指南依据 config.yml、rules.yml、talk_moves.yml、followups.yml 和 what_ifs。",
+    "读取的是 ~/Documents/clair 中的副本，可能与已部署的镜像不同。各模式的官方语言列表以 API 的 GET /languages/{modo} 返回的为准。",
+    "TSLM、TSLQ、COFF、TSIM 和 GINI 等信号的含义，是根据规则和语句的名称推断的。",
+    "对名称的解读（apt-goals 的目标 1 至 4；SSRL）属于解释，已标注 [待确认 ...]。"
+  ]
+}

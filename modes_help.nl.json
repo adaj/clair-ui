@@ -1,0 +1,254 @@
+{
+  "_status": "concept ter beoordeling door de auteur",
+  "_fonte": "Gelezen uit ~/Documents/clair/triggering/modes (config.yml, rules.yml, talk_moves.yml, followups.yml, what_ifs en small_talk.yml). De README's van de vier modi zeggen 'Documentation under construction'. Passages met [te bevestigen] zijn interpretatie en moeten worden nagekeken.",
+  "geral": {
+    "titulo": "In alle modi",
+    "texto": "Clair reageert rechtstreeks op het gesprek met haar (small talk): ze begroet de groep (de begroeting 'Hi everyone, my name is Clair…'; volgens de auteur begroet ze ook wanneer twee personen de chat binnenkomen [te bevestigen hoe de server dat bepaalt]), bevestigt dat ze er nog is, zegt hoe het met haar gaat en wie ze is. Als iemand om hulp vraagt, stelt ze voor het aan de partner te vragen, en bij een inhoudelijke vraag zegt ze dat ze er niet genoeg van weet om te antwoorden. Haar rol is de discussie tussen de mensen te faciliteren, niet om een bron van antwoorden te zijn. Deze antwoorden bestaan in alle gelezen modi (in elke taal van de modus). Wat per modus verschilt, is de set zetten (talk moves), de gesprekssignalen die bepalen wanneer ze ingrijpt en de beschikbare talen."
+  },
+  "modos": [
+    {
+      "id": "apt-base",
+      "rotulo": "apt-base (standaard)",
+      "em_uma_frase": "Het referentierepertoire van Academically Productive Talk: acht zetten om het redeneren te verdiepen en deelnemers naar elkaar te laten luisteren.",
+      "o_nome": "APT staat voor Academically Productive Talk, het referentiekader van talk moves waarop Clair is gebaseerd. 'Base' markeert de kernset van zetten uit die traditie, zonder expliciete pedagogische doelen en zonder inhoud van een specifiek onderwerp. Daarom is het de standaard: het werkt bij elk onderwerp en dient als basislijn om de andere modi mee te vergelijken.",
+      "o_conjunto": "De acht zetten vervullen drie functies. Verdiepen wat iemand zei (het redeneren uitbreiden, om een voorbeeld vragen). Medeleerlingen naar elkaar laten luisteren (instemmen of het oneens zijn, in eigen woorden herformuleren, aanvullen, het eigen idee aan dat van de ander koppelen, voortbouwen op wat al gezegd is). En ordenen wat de groep al heeft opgebouwd (samenvatten). Verscheidene zetten richten zich met naam op één persoon en spreken over de 'partner': ze geven het woord terug aan de deelnemers in plaats van voor hen te antwoorden, wat past bij een Clair die geen inhoud onderwijst.",
+      "como_age": "Elke zet heeft een regel die signalen van de dialogue state combineert (dominantie en coördinatie, type uiting zoals starten of beargumenteren, gelijkenis met het onderwerp, tijd en tempo). Ze treedt alleen op wanneer de zekerheid boven 0,75 komt. De samenvatting is bijvoorbeeld gekoppeld aan lage gelijkenis met het onderwerp en veel tijd, en 'instemmen of het oneens zijn' aan beargumenteren met hoge coördinatie. [te bevestigen]",
+      "jogadas": [
+        {
+          "nome": "Het redeneren uitbreiden",
+          "exemplo": "<speaker>, could you please elaborate more on this?"
+        },
+        {
+          "nome": "Een voorbeeld geven",
+          "exemplo": "<speaker>, could you give an example?"
+        },
+        {
+          "nome": "Voortbouwen op wat al gezegd is",
+          "exemplo": "<speaker>, how does this add to what <discussant> already said?"
+        },
+        {
+          "nome": "Instemmen of het oneens zijn",
+          "exemplo": "<discussant>, do you agree or disagree with your partner?"
+        },
+        {
+          "nome": "Bijdragen aan elkaar koppelen",
+          "exemplo": "<discussant>, considering what <speaker> just said, how does your idea fit in?"
+        },
+        {
+          "nome": "Herformuleren",
+          "exemplo": "<discussant>, could you put in other words what your partner just said?"
+        },
+        {
+          "nome": "Aanvullen",
+          "exemplo": "<discussant>, do you have anything to add to what your partner just said?"
+        },
+        {
+          "nome": "Samenvatten",
+          "exemplo": "This conversation is interesting. Would any of you be able to give a brief summary of what you've covered so far?"
+        }
+      ],
+      "indicado_para": [
+        "Eerste demonstratie van Clair.",
+        "Elk onderwerp: geen voorbereid inhoudelijk materiaal nodig.",
+        "Basislijn om met de andere modi te vergelijken.",
+        "Vijf talen: EN, PT, NL, ZH en DE."
+      ],
+      "cuidados": [
+        "Er is geen zet gekoppeld aan stilte: wie zwijgt, valt niet op (vergelijk met apt-goals). [te bevestigen]",
+        "De zinnen spreken over de 'partner', dus ze zijn voor duo's geschreven.",
+        "Geen expliciete pedagogische doelen: Clair reageert op patronen in het gesprek, niet op een lesplan."
+      ],
+      "idiomas": [
+        "EN",
+        "PT",
+        "NL",
+        "ZH",
+        "DE"
+      ],
+      "sinais": 12
+    },
+    {
+      "id": "apt-goals",
+      "rotulo": "apt-goals",
+      "em_uma_frase": "APT geordend naar pedagogische doelen: Clair kan het gesprek zelf op gang brengen, wie stil is uitnodigen, terugsturen naar de les en hypothetische vragen voorstellen.",
+      "o_nome": "'Goals' geeft aan dat de zetten geen vlak repertoire meer zijn, maar dienen voor genummerde doelen: de check-in is doel 1; heroriënteren, medeleerlingen coördineren en ze elkaar laten bevragen zijn doel 2; de what-if is doel 3; het redeneren onder druk zetten is doel 4. De nummering suggereert een progressie, van mensen laten deelnemen en bij de taak houden tot het eisen van onderbouwing [te bevestigen].",
+      "o_conjunto": "Zes zetten, en dat verandert de rol van Clair: in plaats van alleen te reageren op wat gezegd is, zorgt ze ook voor wie niet spreekt. De check-in nodigt de groep uit de voortgang te delen; de heroriëntatie brengt de discussie terug naar de les; de coördinatie vraagt een medeleerling een ander te helpen met de volgende stap; de vragen tussen peers stimuleren om de medeleerling te bevragen in plaats van haar; de what-if werpt een hypothese op ('wat zou er gebeuren als…'); en de druk op het redeneren vraagt om uitleg of een voorbeeld. Drie van de zetten hebben kant-en-klare vervolgvragen (bijvoorbeeld de auteur vragen uit te leggen waarom hij of zij zo denkt), dus Clair voert korte reeksen, geen losse opmerkingen.",
+      "como_age": "Volgens de regels hangt de check-in af van het signaal TSLM en van de tijd, de heroriëntatie van het signaal COFF, de coördinatie tussen peers van coördinatie tussen medeleerlingen zonder vraag en van het signaal L3_CU, en de vragen tussen peers van het signaal TSLQ [te bevestigen wat TSLM, COFF en TSLQ betekenen: ik lees ze als tijd sinds het laatste bericht, gesprek buiten het onderwerp en tijd sinds de laatste vraag]. Omdat ze kan spreken zonder triggerbericht, moet de interface de server regelmatig raadplegen (proactieve check).",
+      "jogadas": [
+        {
+          "nome": "Check-in (doel 1)",
+          "exemplo": "It seems a bit quiet in this corner. Would you like to share your current progress and if there's anything you're unsure about the next steps?"
+        },
+        {
+          "nome": "Heroriënteren (doel 2)",
+          "exemplo": "I'm getting a bit lost here. Shall we redirect your discussion back to the lesson?"
+        },
+        {
+          "nome": "Coördinatie tussen peers (doel 2)",
+          "exemplo": "<discussant>, could you help <speaker>? Please share what you think might be a good next step."
+        },
+        {
+          "nome": "Vragen tussen peers (doel 2)",
+          "exemplo": "<discussant>, got any questions for <speaker> about something you are finding difficult to understand?"
+        },
+        {
+          "nome": "What-if (doel 3)",
+          "exemplo": "<speaker>, what do you think would happen if the particle didn't fit the enzyme's shape?"
+        },
+        {
+          "nome": "Het redeneren onder druk zetten (doel 4)",
+          "exemplo": "<discussant>, could you elaborate more on what <speaker> said or give one example to illustrate?"
+        }
+      ],
+      "indicado_para": [
+        "Clair laten zien die het gesprek zelf op gang brengt.",
+        "Activiteiten met duidelijke doelen: deelname, focus op de les, onderbouwing.",
+        "Onderwerpen Enzymen (spijsvertering) en Genetica, met kant-en-klare what-if-vragen. [te bevestigen]",
+        "Zes talen: EN, NL, PT, ES, DE en ZH."
+      ],
+      "cuidados": [
+        "De what-if-vragen bestaan alleen voor Enzymen en Genetica; bij een ander onderwerp heeft doel 3 geen kant-en-klaar materiaal. [te bevestigen]",
+        "Het is gebouwd rond een les (de zinnen spreken over 'lesson') met gesprekken in het Nederlands over Enzymen. [te bevestigen]",
+        "Heeft de proactieve check nodig om Clair uit zichzelf te laten spreken."
+      ],
+      "idiomas": [
+        "EN",
+        "NL",
+        "PT",
+        "ES",
+        "DE",
+        "ZH"
+      ],
+      "sinais": 15
+    },
+    {
+      "id": "self-determination",
+      "rotulo": "self-determination",
+      "em_uma_frase": "Motivationele ondersteuning in plaats van druk op het redeneren: drie zetten die keuze bieden en competentie en verbondenheid tussen medeleerlingen versterken.",
+      "o_nome": "Dit is de zelfdeterminatietheorie, die drie basale psychologische behoeften onderscheidt: autonomie, competentie en verbondenheid (relatedness). De drie zetten van de modus dragen precies die namen, dus het ontwerp vertaalt de theorie rechtstreeks: in plaats van meer argumentatie te eisen, probeert Clair de motivatie om door te praten op peil te houden.",
+      "o_conjunto": "Autonomie: nodigt uit om uit te leggen of een voorbeeld te geven, maar maakt expliciet dat de persoon liever met het gesprek verder kan gaan ('I appreciate your choice'). Competentie: koppelt de uiting aan wat al besproken is en benadrukt daarna dat elke bijdrage het begrip verbetert. Verbondenheid: vraagt hoe de ideeën overeenkomen met of verschillen van die van de medeleerling en bedankt voor het delen. Het repertoire is minimaal: één zin per zet, plus twee bedankberichten per zet. Het is een modus om het effect van een ondersteunende toon te observeren, niet om variatie in interventies te hebben.",
+      "como_age": "Beslist met weinig signalen (type uiting, nabijheid tot het onderwerp, tempo) en blijft stil wanneer het bericht een vraag is. [te bevestigen]",
+      "jogadas": [
+        {
+          "nome": "Ondersteuning van autonomie",
+          "exemplo": "<speaker>, could you elaborate on this or give an example to your partner? Or would you rather continue with the conversation? I appreciate your choice."
+        },
+        {
+          "nome": "Ondersteuning van competentie",
+          "exemplo": "<speaker>, how does this connect with what we have discussed so far?"
+        },
+        {
+          "nome": "Ondersteuning van verbondenheid",
+          "exemplo": "<discussant>, how do your ideas match or differ from your partner's ideas? What else would you like to add?"
+        }
+      ],
+      "indicado_para": [
+        "Een motivationele ondersteuningsstijl vergelijken met de stijl van het APT, die druk zet op het redeneren.",
+        "Demonstraties waarin je een vriendelijkere, minder veeleisende Clair wilt."
+      ],
+      "cuidados": [
+        "Slechts één taal: EN. [te bevestigen]",
+        "Slechts één zin per zet: in lange gesprekken wordt dat repetitief.",
+        "Gebruikt minder gesprekssignalen (9) dan de andere modi (12 tot 18)."
+      ],
+      "idiomas": [
+        "EN"
+      ],
+      "sinais": 9
+    },
+    {
+      "id": "ssrl",
+      "rotulo": "ssrl",
+      "em_uma_frase": "Gedeelde regulatie van leren: interventies gericht op de hele groep, over begrip, gezamenlijke planning, deelname en sfeer.",
+      "o_nome": "SSRL staat doorgaans voor Socially Shared Regulation of Learning, de regulatie van leren die de groep samen uitvoert [te bevestigen]. De vijf zetten zeggen hetzelfde: cognitief, metacognitief, gedragsmatig, sociaal-emotioneel en gedeeld perspectief. De focus verschuift van de individuele bijdrage naar het functioneren van de groep.",
+      "o_conjunto": "De zinnen richten zich tot iedereen ('explain to each other', 'how could you help each other'), zonder iemand bij naam te noemen, anders dan bij APT. Elke zet heeft 3 of 4 varianten, het meest gevarieerde repertoire van de modi. Cognitief: let op verwarring en op gezamenlijk begrip van de concepten en de bronnen. Metacognitief: vraagt te praten over hoe ze de taak begrijpen en hoe ze samen verdergaan. Gedragsmatig: vestigt de aandacht op wie misschien niet heeft deelgenomen. Sociaal-emotioneel: verschijnt wanneer de toon verhit raakt en vraagt om een vriendelijker gesprek. Gedeeld perspectief: herinnert eraan dat het doel van de groep is en vraagt om een gezamenlijk plan. Gedragsmatig en gedeeld perspectief worden maar één keer getriggerd, om niet als verwijt over te komen.",
+      "como_age": "Dit is de modus met de meeste signalen (18), onder andere ongelijke deelname tussen de leden en signalen van negatieve emotie [te bevestigen wat de signalen betekenen]. De gedragsmatige zet en die van gedeeld perspectief worden maar één keer getriggerd [te bevestigen of de limiet per sessie of per groep geldt]. [te bevestigen]",
+      "jogadas": [
+        {
+          "nome": "Cognitief",
+          "exemplo": "There seems to be some confusion in the air. Explain to each other again what you are trying to understand at the moment."
+        },
+        {
+          "nome": "Metacognitief",
+          "exemplo": "Excellent reflection! How could you help each other to move forward as a group?"
+        },
+        {
+          "nome": "Gedragsmatig",
+          "exemplo": "Hmm - I wonder if everyone has had a chance to make their voice heard?"
+        },
+        {
+          "nome": "Sociaal-emotioneel",
+          "exemplo": "Working together is sometimes challenging! How could you make sure that everyone is still on good terms?"
+        },
+        {
+          "nome": "Gedeeld perspectief",
+          "exemplo": "I noticed that you may be thinking from your own perspective. What could be your common plan to solve the problem?"
+        }
+      ],
+      "indicado_para": [
+        "Groepswerk met drie of meer personen (de zinnen spreken over 'you' en 'the group', niet over een 'partner').",
+        "Taken waarbij evenwichtige deelname en de sfeer in de groep belangrijk zijn.",
+        "Een Clair laten zien die meer gericht is op het groepsproces dan op de inhoud."
+      ],
+      "cuidados": [
+        "Slechts één taal: EN. [te bevestigen]",
+        "De gegevensmap van de modus is Chats-FI-ForceEnergy-2023 (taak over kracht en energie); de kalibratie voor andere contexten is hier niet gedocumenteerd. [te bevestigen]"
+      ],
+      "idiomas": [
+        "EN"
+      ],
+      "sinais": 18
+    }
+  ],
+  "comparativo": {
+    "colunas": [
+      "Modus",
+      "Zetten",
+      "Richt zich tot",
+      "Specifiek onderwerp",
+      "Talen",
+      "Signalen"
+    ],
+    "linhas": [
+      [
+        "apt-base (standaard)",
+        "8",
+        "Personen bij naam, sprekend over de 'partner'",
+        "Nee",
+        "EN, PT, NL, ZH, DE",
+        "12"
+      ],
+      [
+        "apt-goals",
+        "6",
+        "Personen bij naam en de groep (check-in, heroriëntatie)",
+        "Ja, voor de what-if (Enzymen, Genetica)",
+        "EN, NL, PT, ES, DE, ZH",
+        "15"
+      ],
+      [
+        "self-determination",
+        "3",
+        "Personen bij naam",
+        "Nee",
+        "EN",
+        "9"
+      ],
+      [
+        "ssrl",
+        "5",
+        "De hele groep, zonder namen",
+        "Nee",
+        "EN",
+        "18"
+      ]
+    ]
+  },
+  "legenda_placeholders": "In de voorbeeldzinnen is <speaker> degene die net sprak en <discussant> een andere deelnemer van de groep [te bevestigen].",
+  "incertezas": [
+    "De vier README's zeggen 'Documentation under construction'. Deze gids komt uit config.yml, rules.yml, talk_moves.yml, followups.yml en what_ifs.",
+    "Gelezen uit de kopie in ~/Documents/clair, die kan afwijken van de uitgerolde image. De officiële lijst talen per modus is die welke de API teruggeeft bij GET /languages/{modo}.",
+    "De betekenis van signalen als TSLM, TSLQ, COFF, TSIM en GINI is afgeleid uit de namen van de regels en de zinnen.",
+    "De lezingen van de namen (doelen 1 tot 4 van apt-goals; SSRL) zijn interpretatie en zijn gemarkeerd met [te bevestigen]."
+  ]
+}
